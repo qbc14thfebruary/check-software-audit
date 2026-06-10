@@ -4,10 +4,10 @@ Tài liệu này cung cấp mã nguồn script Python giúp tự động quét, 
 
 ---
 
-## 1. Mã nguồn Python (`Check_Software_Audit.py`)
+## 1. Mã nguồn Python (`CheckSoftwareAudit.py`)
 
 Script này sử dụng thư viện `winreg` (thư viện có sẵn trên hệ điều hành Windows, không cần cài đặt thêm bên thứ ba) để quét sâu vào cả hai phân vùng Registry `32-bit` và `64-bit`. 
-Kết quả thu được sẽ được xuất ra dưới dạng file báo cáo định dạng CSV (`software_audit_report.csv`), giúp bạn dễ dàng mở bằng Microsoft Excel để theo dõi, bộ lọc và đối chiếu.
+Kết quả thu được sẽ được xuất ra dưới dạng file báo cáo định dạng CSV (`SoftwareAuditReport.csv`), giúp bạn dễ dàng mở bằng Microsoft Excel để theo dõi, bộ lọc và đối chiếu.
 
 ## 2. Cách chạy script này hiệu quả nhất
 
@@ -21,7 +21,7 @@ bạn nên vận hành đoạn mã dưới quyền Quản trị viên (Administr
 - **Thực thi lệnh quét:** Di chuyển thư mục làm việc đến vị trí lưu tệp script và chạy câu lệnh sau:
 
 ```bash
-python Check_Software_Audit.py
-
+python CheckSoftwareAudit.py
+```
 - Kiểm tra kết quả báo cáo: Sau khi tiến trình chạy kết thúc, một file báo cáo mang tên software_audit_report.csv sẽ tự động xuất hiện ngay tại cùng thư mục chứa tệp script.
 Lúc này, bạn chỉ cần mở tệp này bằng phần mềm Microsoft Excel là đã có ngay một bảng số liệu danh mục trực quan, rõ ràng và cực kỳ scannable phục vụ cho công tác hậu kiểm bản quyền nội bộ doanh nghiệp.
