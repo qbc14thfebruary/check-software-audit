@@ -188,7 +188,7 @@ def run_audit():
     unique_software = {i["Software Name"]: i for i in all_software}.values()
 
     # Xuất file CSV nâng cấp
-    output_file = "software_audit_report_pro.csv"
+    output_file = "SoftwareAuditReport.csv"
     fields = [
         "Software Name",
         "Version",
